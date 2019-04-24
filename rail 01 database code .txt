@@ -1,0 +1,92 @@
+create table employeetable
+(
+user_id char(20),
+pass char(15),
+joindate char(10),
+empid char(10),
+designation char(20),
+salary char(15),
+retire char(10)
+);
+
+
+
+
+insert into employeetable values('niyom','1234','29-5-2018','101','accountant','25000','30-5-2040');
+insert into employeetable values('rahul','3434','2-5-2018','102','assistant manager','35000','30-5-2045');
+insert into employeetable values('rudro','1111','1-3-2019','103','manager','40000','31-7-2050');
+insert into employeetable values('anondo','5890','20-8-2017','104','ass. ceo','55000','25-3-2030');
+insert into employeetable values('mahi','9999','8-3-2014','105','ceo','60000','3-3-2050');
+
+
+create table admininfo
+(
+user_id char(20),
+admin_id char(10),
+pass char(15)
+);
+
+create table traininfo
+(
+train_no char(20),
+seatno char(8),
+train_name char(20),
+no_stuff char(10),
+arvl_time char(10),
+source char(20),
+dist char(20)
+);
+
+
+
+create table ticketinfo
+(
+dte char(20),
+train_no char(20),
+seatno char(8),
+fare char(10),
+ticket_no char(20),
+pnr char(25),
+class char(10),
+user_name char(20),
+user_id char(20),
+age char(10),
+arvl_time char(20),
+distance char(20),
+station char(20)
+);
+
+
+dte,train_no,seatno,fare,ticket_no,pnr,class,user_name,user_id,age,arvl_time,distance,station
+
+'"+txtDateTI.getText()+"','"+txttrainnoTI.getText()+"','"+txtSeatNoTI.getText()+"','"+txtFareTI.getText()+"','"+txtTicketNoTI.getText()+"','"+txtPNR_TI.getText()+"','"+txtClassTI.getText()+"','"+txtUserNameTI.getText()+"','"+txtUserIdTI.getText()+"','"+txtAgeTI.getText()+"','"+txtArrival_Time.getText()+"','"+txtDistanceTI.getText()+"','"+txtStationNameTI.getText()+"'
+
+
+
+create table paymenttable
+(
+bankid char(20),
+bankname char(20),
+transaction_id char(20),
+pin char(20),
+reciept_no char(20),
+cash char(50)
+);
+
+
+
+select ticketinfo.train_no,ticketinfo.station,ticketinfo.fare,traininfo.arvl_time from ticketinfo inner join traininfo on ticketinfo.train_no = traininfo.train_no where ticketinfo.train_no =
+select studentinfo.id,balance.name,account_info.payment from studentinfo join balance on studentinfo.id = balance.id join account_info on balance.acc_id = account_info.acc_id where studentinfo.id =
+
+
+
+select
+1st.id,2nd.id 
+from 1st
+inner join
+2nd 
+on 1st.id=2nd.id;
+
+
+
+
